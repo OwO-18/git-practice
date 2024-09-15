@@ -21,4 +21,4 @@ git add hello.txt"
 之後要把 main 分支推送到 origin 去也卡了好一陣子，包含不知道github的密碼原來要另外找token，找到了之後又好像是因為兩邊檔案差太多的關係？所以在後面加上「--allow-unrelated-histories」才看似成功。但現在回顧起來發現原本的hello.txt好像就不見了。
 
 回到正題，現在把github這邊pull回來看，進到.git資料夾看起來像這樣：
-![](/Users/ben/Desktop/Screenshot/截圖 2024-09-15 下午9.29.15.png)
+![](https://drive.google.com/file/d/1k1FnB0MStKLgMWadivSSyyiKgLsQ6a13/view?usp=drive_link)
