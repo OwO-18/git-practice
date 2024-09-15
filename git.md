@@ -20,5 +20,8 @@ git add hello.txt"
 
 之後要把 main 分支推送到 origin 去也卡了好一陣子，包含不知道github的密碼原來要另外找token，找到了之後又好像是因為兩邊檔案差太多的關係？所以在後面加上「--allow-unrelated-histories」才看似成功。但現在回顧起來發現原本的hello.txt好像就不見了。
 
-回到正題，現在把github這邊pull回來看，進到.git資料夾看起來像這樣：
-![](https://drive.google.com/file/d/1k1FnB0MStKLgMWadivSSyyiKgLsQ6a13/view?usp=drive_link)
+回到正題，現在把github這邊pull回來看，進到.git資料夾多了head, index等等東西，但想要cd進去看好像不行，會說他不是一個目錄
+
+# commit message 應該怎麼寫比較好？應該有什麼 style 嗎？
+
+這題的話我目前感覺是把修改或增減了什麼功能寫上去，至於多大多小可能就像是老師上課提到的，有完整的小功能就可以更新，避免很久才commit一次
