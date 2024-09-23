@@ -7,6 +7,11 @@
 
 <img src="attachment/download-nodejs.png" width="70%"/>
 
+## nvm與npm分別是什麼
+
+- nvm是node version manager的縮寫，在下載node的時候也下了 `$ nvm install 20` 的指令，代表想要下載的版本號是20。
+- npm的話則是node package manager的縮寫，用來管理專案使用到的套件。
+
 ## git interals
 
 每個物件會被丟到SHA1 Function，雜湊出160 bits的Key值（40個英數字，16進位制），也因此相同的物件就會有相同的key值。
