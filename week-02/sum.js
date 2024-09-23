@@ -1,4 +1,3 @@
-```
 function sum(ary) {
 	// TODO: sum all elements in ary
   ans = ary.reduce(function(total, e){
@@ -8,4 +7,3 @@ function sum(ary) {
 }
 
 console.log(sum([1, 5, 3, 2])); // 11
-```
