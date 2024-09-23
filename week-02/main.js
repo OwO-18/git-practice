@@ -3,11 +3,20 @@
 import Stack from './stack.js';
 
 let stack = new Stack();
-stack.print();
+
+// Test push, print
+stack.print(); //[]
 
 stack.push(5);
 stack.push(8);
-stack.print();
+stack.print(); //[5, 8]
 
-// TODO: 應該還要做哪些測試，以驗證自己開發的 stack 是沒有問題的？
-​
+// Test pop, peek
+stack.peek(); //8
+stack.pop();
+stack.peek(); //5
+​stack.pop();
+
+// Test 
+console.log(stack.isEmpty()); //True
+
