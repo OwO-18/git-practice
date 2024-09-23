@@ -46,4 +46,5 @@ function sum(ary) {
 
 console.log(sum([1, 5, 3, 2])); // 11
 ```
-[參考網址](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+參考網址：
+[developer.mozilla.org](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
