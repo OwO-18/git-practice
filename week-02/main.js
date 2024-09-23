@@ -11,12 +11,10 @@ stack.push(5);
 stack.push(8);
 stack.print(); //[5, 8]
 
-// Test pop, peek
-stack.peek(); //8
+console.log(stack.peek()); // 8
 stack.pop();
-stack.peek(); //5
-​stack.pop();
-
-// Test 
-console.log(stack.isEmpty()); //True
-
+console.log(stack.peek()); // 5
+stack.print(); // [5]
+console.log(stack.size()); // 1
+stack.clear();
+console.log(stack.isEmpty()); // true
