@@ -24,16 +24,19 @@ export default class Stack {
   peek() {
 	  if(this.isEmpty()){
 		  return null;
-  }
-	  top_index = this.#items.length - 1; //最頂端的index是長度扣1
+	  }
+  
+	  let top_index = this.#items.length - 1; //最頂端的index是長度扣1
 	  return this.#items[top_index];
-
+  }
   // 檢查 stack 是否為空
   isEmpty() {
-	  if(this.isEmpty()){
+	  if(this.#items.length == 0){
 		  return true;
-  }	  else
+	  }
+  	  else
 		  return false;
+  }
 
   // 回傳 stack 中元素的個數
   size() {
