@@ -11,4 +11,4 @@ console.log(sum([1, 5, 3, 2])); // 11
 ```
 
 參考網址：
--[JavaScript參考文件-Array](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+-[JavaScript參考文件_Array](<https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce>)
