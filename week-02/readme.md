@@ -23,3 +23,6 @@ function sum(n){
 console.log(sum(10))
 ```
 另外還有for迴圈、遞迴等寫法
+
+# 作業C. 程式題: sum
+[參考網址](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
