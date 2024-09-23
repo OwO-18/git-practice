@@ -7,7 +7,7 @@ export default class Stack {
   #items;
 
   constructor() {
-    this.#items = [];
+	  this.#items = [];
   }
 
   // 在 stack 頂部加入元素i
@@ -17,36 +17,36 @@ export default class Stack {
 
   // 移除並回傳 stack 頂部的元素
   pop() {
-		return this.#items.pop();
+	  return this.#items.pop();
   }
 
   // 回傳 stack 頂部的元素，但不移除它
   peek() {
-    temp = this.#items.pop();
-    push(element);
-    return temp;
+	  if(this.isEmpty()){
+		  return null;
   }
+	  top_index = this.#items.length - 1; //最頂端的index是長度扣1
+	  return this.#items[top_index];
 
   // 檢查 stack 是否為空
   isEmpty() {
-    if(this.#items.length == 0){
-      return true;
-  }
-    else
-      return false;
+	  if(this.isEmpty()){
+		  return true;
+  }	  else
+		  return false;
 
   // 回傳 stack 中元素的個數
   size() {
-    return this.#items.length + 1;
+	  return this.#items.length;
   }
 
   // 清空 stack 
   clear() {
-    // TODO
+	  this.#items = [];
   }
 
   // 印出 stack 內容
   print() {
-    // TODO
+	  console.log(this.#items);
   }
 }
