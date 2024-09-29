@@ -149,5 +149,5 @@ doJob('吃午餐', 2000, function (data) {
 
 但如果要調成台灣本地時間的話應該需要動到老師的 code（又或許有不用動到的方法），但不管怎樣記錄一下自己的發現在這裡。
 
-參考資料在 [這邊](https://ithelp.ithome.com.tw/articles/10231926)
+參考資料在 [這邊](https://ithelp.ithome.com.tw/articles/10231926) 和 [這邊](https://github.com/aszx87410/blog/issues/66)
 
