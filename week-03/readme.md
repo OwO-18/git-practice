@@ -94,6 +94,7 @@ console.log('after');
 輸出是 start, after, timeout
 
 ---
+#### sum.js
 
 array 函式都可以用 for 迴圈實作、可以練習
 
@@ -102,6 +103,7 @@ array 函式都可以用 for 迴圈實作、可以練習
 還是取決於程式碼在哪裡跑，每個環境上有一些實作上的細節差異
 
 ---
+#### 關於coding 的一些雜項：
 
 - 先把 validation 做好，input確定沒問題了再做操作
 - early return
