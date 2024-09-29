@@ -140,5 +140,7 @@ doJob('吃午餐', 2000, function (data) {
 });
 ```
 但發現這樣的輸出會是：
-![]()
 
+<img src="assets/homework_B first attempt.png" width="70%"/>
+
+明顯和老師要求的不同，給我的感覺有點像是課堂上考試的那題一樣（？），找了一些資料後才知道要用巢狀的方式。
