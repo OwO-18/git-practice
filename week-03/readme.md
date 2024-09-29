@@ -1,6 +1,6 @@
 ## week-03 to-do list
 - [x] 課程筆記
-- [ ] 作業A
+- [x] 作業A
 - [ ] 作業B
 - [ ] 作業C
 - [ ] 作業D
@@ -110,3 +110,10 @@ array 函式都可以用 for 迴圈實作、可以練習
 
 ---
 
+## 作業 A
+
+#### 什麼是 AWS Region, AZ (availability zones)
+
+- AWS Region 是 AWS 分散在全球不同地方的數據中心，具體在頁面右上角可以切換。
+- AZ (availability zones) 則是分佈在同一個區域內不同數據中心，用來提高容錯；即使一個 AZ 掛了也可以切換到其他的。
+- 所以一個 AWS Region 內包含了多個 AZ。
