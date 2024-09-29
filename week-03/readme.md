@@ -117,3 +117,28 @@ array 函式都可以用 for 迴圈實作、可以練習
 - AWS Region 是 AWS 分散在全球不同地方的數據中心，具體在頁面右上角可以切換。
 - AZ (availability zones) 則是分佈在同一個區域內不同數據中心，用來提高容錯；即使一個 AZ 掛了也可以切換到其他的。
 - 所以一個 AWS Region 內包含了多個 AZ。
+
+作業 B
+---
+一開始的嘗試是直觀的
+
+```JS
+doJob('刷牙', 1000, function (data) {
+    console.log(data);
+});
+
+doJob('吃早餐', 3000, function (data) {
+    console.log(data);
+});
+
+doJob('寫功課', 1000, function (data) {
+    console.log(data);
+});
+
+doJob('吃午餐', 2000, function (data) {
+    console.log(data);
+});
+```
+但發現這樣的輸出會是：
+![]()
+
