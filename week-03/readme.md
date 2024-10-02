@@ -159,3 +159,71 @@ doJob('吃午餐', 2000, function (data) {
 
 作業C
 ---
+
+#### 觀察 package.json 的變化
+
+```JS
+npm init
+```
+<img src="assets/npm_init.png" width="70%"/>
+
+```JS
+npm install express
+```
+<img src="assets/install_express.png" width="70%"/>
+
+- 觀察 package.json 的變化
+
+這題小緊張了一下。我按照題目順序，在執行完 `npm install express` 才去看 package.json 的內容。
+
+長得像是這樣：
+
+<img src="assets/package_1.png" width="70%"/>
+
+發現此時package內已經有一個 dependencies，就是剛剛裝的 `"express": "^4.21.0"`。
+
+但還是不知道一開始 `npm init` 之後的狀態，我就想說如果重新 `npm init` 也許可以？
+
+<img src="assets/package_1.png" width="70%"/>
+
+結果長得像是這樣，發現他多了 `"devDependencies": {}, "description": ""`
+
+並且 `"express": "^4.21.0"`也還在，所以我覺得應該是沒有 `npm init` 到。
+
+<img src="assets/npm_reinit.png" width="70%"/>
+
+我問了 ChatGPT 什麼時候會出現這樣的 devDependencies ，得到的回覆是：
+
+> 使用 --save-dev 安裝某個開發相關的套件，會將該套件記錄到 devDependencies 中
+
+但我也沒有執行上面的指令，所以想先擺著。
+
+---
+
+到這邊本來想要重開一個資料夾，然後執行`npm init`。
+
+最後發現其實當初在 init 的時候要我輸入的一些資訊就是 package.json 的內容，並且剛好有留下紀錄（在截圖 init 的時候）。
+
+<img src="assets/npm_init.png" width="70%"/>
+
+發現基本上就是沒有 dependencies 那一項～
+
+---
+
+#### 觀察 node_modules 裡面有什麼
+
+這題我在順序前面一點的時候就不小心看到裡面的內容了(?)
+
+我在執行完 `npm install express` 之後沒有先確認到底做了什麼事，就想要 push 回 gitgub 上面，想要從上面看。
+
+好險有先看了一下 status ，發現超多東西，感覺就不能都 push 上去。
+
+<img src="assets/node_modules_1.png" width="70%"/>
+
+然後就趕快 reset：
+
+<img src="assets/first_push_attempt.png" width="70%"/>
+
+想了一下老師上課講過能載下來的應該不要推上 github，所以去加了 .gitignore 文件把 node_modules/ 給忽略。
+
+
