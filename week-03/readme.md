@@ -2,7 +2,7 @@
 - [x] 課程筆記
 - [x] 作業A
 - [x] 作業B
-- [ ] 作業C
+- [x] 作業C
 - [ ] 作業D
 
 ## 9/26的課程筆記
@@ -157,3 +157,5 @@ doJob('吃午餐', 2000, function (data) {
 
 參考資料在 [這邊](https://ithelp.ithome.com.tw/articles/10231926) 和 [這邊](https://github.com/aszx87410/blog/issues/66)
 
+作業C
+---
