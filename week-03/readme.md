@@ -226,4 +226,6 @@ npm install express
 
 想了一下老師上課講過能載下來的應該不要推上 github，所以去加了 .gitignore 文件把 node_modules/ 給忽略。
 
+最後補一下以瀏覽器開啟 http://localhost:3000/ 的結果：
 
+<img src="assets/web_result.png" width="70%"/>
