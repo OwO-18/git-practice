@@ -18,7 +18,7 @@ push之前只建了一個hello.txt，並且按照老師的教程打
 ```
 git add hello.txt"
 ```
-會跳出找不到目錄的報錯，找網路之後才發現要先用touch建立，之後就有建立成功，這時git-workshop的資料夾確實有這個檔案建立（沒有進去.git看很抱歉）
+會跳出找不到目錄的報錯，找網路之後才發現要先用touch建立，之後就有建立成功，這時git-workshop的資料夾確實有這個檔案建立
 
 之後要把 main 分支推送到 origin 去也卡了好一陣子，包含不知道github的密碼原來要另外找token，找到了之後又好像是因為兩邊檔案差太多的關係？所以在後面加上「--allow-unrelated-histories」才看似成功。但現在回顧起來發現原本的hello.txt好像就不見了。
 
@@ -39,3 +39,19 @@ git add hello.txt"
 而 commit message 則是希望日後在維修的時候可以方便修改錯誤，也因此會反過來希望不要太久才 commit 一次。就像是從頭破到王關前才存檔，才發現一開始的要素沒拿，想要全收集的話只能砍掉重練。
 
 我實際去 github 上面隨便搜尋了一個 trending repo，觀看裡面的 commit message，並搭配查找的資料來說明好壞。
+
+<img src="assets/good_example.png" width="100%"/>
+
+>[來源](https://github.com/mediar-ai/screenpipe/pull/444)
+
+這個 commit message 我覺得好的地方有以下幾點：
+- type : 在標題的時候描述這個 commit message 的類別是什麼，常見的 type 可能有 fix, feature, bug 等等
+- body : 描述這個 commit message 做了什麼更動，就這個例子來說他除了 description 以外，還有 type of change 跟 how to test 兩項幫助其他人閱讀。但 type of change 這項有看到其他 repo 是用 label 的方式來做。
+- footer : 描述對應到的 issue 是哪一個
+
+<img src="assets/bad_example.png" width="100%"/>
+
+而這個 commit message 我覺得不好的地方則是只有提供一個 Fix，其他描述都沒有。這樣也許之後要回來找可能也很痛苦，或是容易跟其他 Fix 搞混。
+
+>[來源](https://github.com/Pythagora-io/gpt-pilot/pull/1086)
+
