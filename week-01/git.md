@@ -8,6 +8,8 @@
 
 ## image
 ![](https://kaochenlong.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYjg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ac905ae96cc87e98a5beb9e21ffcbf481b7fd3f2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJXa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--578d6799c87a604ca574298502ba874c9075e929/git-objects2.png)
+
+>[參考資料](https://kaochenlong.com/2017/08/11/git-on-modern-web.html)
 # 紀錄在 git repo 操作過程中，.git 檔案夾裡的變化
 
 因為第一次使用git，前面有很多操作不順的地方，沒注意到作業要求，跟著做的時候沒有留心.git資料夾內的變化，我這邊列出幾個在執行push到github後，再pull下來的觀察：
@@ -24,4 +26,16 @@ git add hello.txt"
 
 # commit message 應該怎麼寫比較好？應該有什麼 style 嗎？
 
-這題的話我目前感覺是把修改或增減了什麼功能寫上去，至於多大多小可能就像是老師上課提到的，有完整的小功能就可以更新，避免很久才commit一次
+查找資料之後，先講為何需要有 commit messeage :為了記錄程式碼的更動，方便日後想要回頭查找的時候才找得到（版本控制 or 遊戲存檔）。
+
+其實想成遊戲存檔的話對我來說比較容易理解 XD（平常遊戲打比較多）
+
+舉我自己的遊玩習慣來說：我喜歡在完成一個段落的時候存檔，也許是破完一個迷宮、探索完一個區域、又或許是刷出一個很稀有的道具 or 打完一個很難的 BOSS 之類的。
+
+但遊戲內通常沒辦法幫存檔取名，當然存檔上面還是會有一些資訊：
+
+（圖片回家補）
+
+而 commit message 則是希望日後在維修的時候可以方便修改錯誤，也因此會反過來希望不要太久才 commit 一次。就像是從頭破到王關前才存檔，才發現一開始的要素沒拿，想要全收集的話只能砍掉重練。
+
+我實際去 github 上面隨便搜尋了一個 trending repo，觀看裡面的 commit message，並搭配查找的資料來說明好壞。
