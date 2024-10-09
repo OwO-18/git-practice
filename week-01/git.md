@@ -42,6 +42,8 @@ git add hello.txt"
 
 <img src="assets/good_example.png" width="100%"/>
 
+另外，在這個例子裡面我發現他 #432，而 #432 的 issue 就可以很方便地看到有哪一條 commit 是想解決這個問題，這個功能我也想拿來用用看。
+
 >[來源](https://github.com/mediar-ai/screenpipe/pull/444)
 
 這個 commit message 我覺得好的地方有以下幾點：
