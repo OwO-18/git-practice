@@ -4,6 +4,8 @@
 #### 2. 什麼是 instance type?
 - instance type 就是每個 instance 的規格，規定了不同的 CPU, RAM 等等，規格越好的 instance 價格也越貴。
 #### 3. 什麼是 Nginx？有哪些用途與特性？
+- 如果今天網站需要面對高流量的訪問，一台主機可能應付不過來，此時可能會想要架設多台主機來應付，但此時的問題會變成 user 不知道該訪問哪一台主機。
+- 而 Nginx 就是介在 server 和 user 中間、負責分配哪一台 server 要來回應。
 #### 4. pm2 套件是什麼？有什麼用處？
 #### 5. 步驟 9 中提到的 `proxy` 是什麼意思？為什麼要透過 Nginx 來 `proxy` 到 Express 開發的 Web Server?
 #### 6. 在 readme 中提供步驟 9 的 Nginx 設定檔
