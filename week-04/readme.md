@@ -36,4 +36,7 @@ location / {
 #### 10. 其他你在過程中遭遇的問題
 - Nginx 的設定檔不知道如何設定，且 `start app.js`時會顯示 status online，看網站沒出現；回頭叫 list 看狀態時發現其實沒開起來，不知道為什麼會這樣。
 
+   <img src="assets/error.png" width="70%"/>
+
   但最後的解決方法是把設定檔重新 startup 就解決了。（可能是設定檔沒有套用上去？）
+
