@@ -54,3 +54,23 @@
 <img src="assets/截圖 2024-11-07 下午3.38.58.png" width="70%"/>
 
 在 80 port 這邊有個 process 佔用了，要先砍掉
+
+<img src="assets/截圖 2024-11-07 下午3.39.24.png" width="70%"/>
+
+然後這邊又重啟了一次 Nginx（現在回想應該是不用這一步，但因為被前面的步驟影響，所以做完一件事都重新啟動一下，想說確保有用到最新的設定）
+並看看 Nginx 的狀態
+
+### 6. 403 forbidden
+之後一樣打開網頁檢查，發現現在的狀態變成 403 forbidden，其實我對 403 比較不清楚（並不是說其他的我很熟），只是對我來說比較常看到的是 404 error
+
+<img src="assets/截圖 2024-11-07 下午3.39.42.png" width="40%"/>
+
+後來是跟同學討論，加上問 ChatGPT；發現應該是 Nginx 已經成功啟動了，也能夠處理請求，但因為目錄的路徑設置錯誤或是權限的問題無法提供網頁。
+
+- 最後是使用 `sudo nano /etc/nginx/sites-available/default` 來確認目錄設置
+- 以及 `ls -ld /var/www/html` 來確認權限問題
+
+### 7. Congratulations!
+<img src="assets/congrats.png" width="40%"/>
+
+第一次碰 troubleshooting，雖然過程很像是在破關（遇到某個問題然後找解法），但第一次接觸，從哪裡下手其實都不太清楚；別組同學進度感覺又超級快。但有了這次經驗之後下次再有類似的情況至少有一點經驗了！
